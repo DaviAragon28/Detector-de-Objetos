@@ -1,0 +1,93 @@
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  margin: 2em;
+  color: #3d3d3d;
+}
+
+nav {
+  border-bottom: 1px grey dashed;
+}
+
+ul li {
+  list-style: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+video {
+  clear: both;
+  display: block;
+  transform: rotateY(180deg);
+  border-radius: 10px;
+  margin-top: 10px
+}
+
+.webcamButton {
+  width: max-content;
+  margin: 20px auto;
+  border-radius: 5px;
+  border: 0px;
+  padding: 5px 20px;
+  background-color: #007f8b;
+  color: #fff;
+  cursor: pointer;
+  transition: all .5s ease-in;
+}
+
+.webcamButton:hover {
+  transform: scale(1.1);
+  transition: all .5s ease-in-out;
+}
+
+.webcamButton.ocultar {
+  display: none;
+}
+
+.containerVideo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 48%;
+  margin: 0 auto;
+}
+
+.detectOnClick p {
+  position: absolute;
+  padding: 5px;
+  background-color: #007f8b;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+  margin: 0;
+}
+
+.containerVideo p {
+  position: absolute;
+  padding-bottom: 5px;
+  padding-top: 5px;
+  background-color: #007f8b;
+  color: #fff;
+  border: 1px dashed rgba(255, 255, 255, 0.7);
+  z-index: 2;
+  font-size: 12px;
+  margin: 0;
+}
+
+.resaltador {
+  background: rgba(0, 244, 0, 0.25);
+  border: 1px dashed #fff;
+  z-index: 1;
+  position: absolute;
+}
+
+/* .detectOnClick {
+  z-index: 0;
+}
+
+.detectOnClick img {
+  width: 100%;
+} */
